@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 fail=open("data.txt","r")
 mas1=[]
 mas2=[]
-for line in file
+for line in file:
     n=line.find(",")
     mas1.append(line[0:n].strip())
     mas2.append(int(line[n+1:len(line)].strip()))
