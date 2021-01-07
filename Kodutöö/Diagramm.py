@@ -1,19 +1,25 @@
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 
-file=open("Kodutöö/1.txt","r")
+file=open("Kodutöö/data.txt","r")
 mas1=[]
 mas2=[]
 for line in file:
     n=line.find(",")
     mas1.append(line[0:n].strip())
-    mas2.append(int(line[n+1:len(line)].strip()))
+    mas2.append(line[n+1:len(line)].strip())
 file.close()
 
-title = "Данные о ИТ безопасности"
-plt.grid(True)
+title = "IKT turvameetodite kasutamise osatähtsus ettevõttes, 2018"
 
-color_rectangle = np.random.rand(7, 3)
-plt.barh(mas1, mas2, color=color_rectangle)
+fig, ax = plt.subplots(ncols=1)
+fig.canvas.set_window_title(title)
+fig.suptitle(title +
+             "https://vana.stat.ee/pressiteade-2019-111")
+
+ax.set_xlabel("%")
+ax.set_ylabel("Nimi")
+
+plt.barh(mas1, mas2, 0.7, color="#b32b0e")
 
 plt.show()
