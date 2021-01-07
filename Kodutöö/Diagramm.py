@@ -14,8 +14,7 @@ title = "IKT turvameetodite kasutamise osatähtsus ettevõttes, 2018"
 
 fig, ax = plt.subplots(ncols=1)
 fig.canvas.set_window_title(title)
-fig.suptitle(title +
-             "https://vana.stat.ee/pressiteade-2019-111")
+fig.suptitle(title)
 
 ax.set_xlabel("%")
 ax.set_ylabel("Nimi")
