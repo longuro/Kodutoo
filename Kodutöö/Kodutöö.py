@@ -1,65 +1,116 @@
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
-#Задание №1
-title = "IKT turvameetodite kasutamise osatähtsus ettevõttes, 2018"
 
-fig, ax = plt.subplots(ncols=1)
-fig.canvas.set_window_title(title)
-fig.suptitle(title +
-             "https://vana.stat.ee/pressiteade-2019-111")
+def o():
+    x1 = np.arange(-9, -1, 0.01)
+    x2 = np.arange(1, 9, 0.01)
+    x3 = np.arange(-9, -1, 0.01)
+    x4 = np.arange(1, 9, 0.01)
+    x5 = np.arange(-9, -6, 0.01)
+    x6 = np.arange(6, 9, 0.01)
+    x7 = np.arange(-1, 1, 0.01)
 
-ax.set_xlabel("%")
-ax.set_ylabel("Nimi")
+    y1 = (-0.0625*((x1+5)**2)+2)
+    y2 = (-0.0625*((x2-5)**2)+2)
+    y3 = (0.25*((x3+5)**2)-3)
+    y4 = (0.25*((x4-5)**2)-3)
+    y5 = (-((x5+7)**2)+5)
+    y6 = (-((x6-7)**2)+5)
+    y7 = (-0.5*(x7**2)+1.5)
 
-#https://vana.stat.ee/pressiteade-2019-111
-data = [
-    [6.6, 'Kasutaja tuvastamine biomeetriliste meetoditega'],
-    [24.9, 'IKT riskianalüüside teostamine'],
-    [28.8, 'IKT turvatestid'],
-    [30.2, 'Andmete, dokumentide, e-kirjade krüpteerimine'],
-    [35.8, 'Turvaintsidendi logifailide kopeerimine ja säilitamine analüüsiks'],
-    [39.9, 'VPN-i kasutamine'],
-    [60, 'Võrgujuurdepääsu kontroll'],
-    [61.1, 'Tugev paroolide autentimine'],
-    [64.6, 'Andmete varundamine eraldi keskkonda'],
-    [70.7, 'Tarkvara värskemate versioonide kasutamine'],
-    [86.1, 'Erinevate IKT turvameetodite kasutamine']
-]
+    plt.subplots()
+    plt.grid(True)
+    plt.plot(x1, y1, 'b', linewidth=1)
+    plt.plot(x2, y2, 'b', linewidth=1)
+    plt.plot(x3, y3, 'b', linewidth=1)
+    plt.plot(x4, y4, 'b', linewidth=1)
+    plt.plot(x5, y5, 'b', linewidth=1)
+    plt.plot(x6, y6, 'b', linewidth=1)
+    plt.plot(x7, y7, 'b', linewidth=1)
 
-values = [x[1] for x in data]
-tick_label = [x[0] for x in data]
+    plt.show()
 
-ax.barh(values, tick_label, 0.7, color="#b32b0e")
+def z():
+    x1 = np.arange(-12, 12, 0.01)
+    x2 = np.arange(-4, 4, 0.01)
+    x3 = np.arange(-12, -4, 0.01)
+    x4 = np.arange(4, 12, 0.01)
+    x5 = np.arange(-4, -0.3, 0.01)
+    x6 = np.arange(-4, -0.2, 0.01)
 
-plt.show()
+    y1 = (-0.0555*(x1**2)+12)
+    y2 = (-0.125*(x2**2) + 6)
+    y3 = (-0.125*((x3+8)**2) +6)
+    y4 = (-0.125*((x4-8)**2) +6)
+    y5 = (2*((x5+3)**2)-9)
+    y6 = (1.5*((x6+3)**2)-10)
 
-#Задание №2
-#ОЧКо(Очки)
-x1 = np.arange(-9, -1, 0.01)
-x2 = np.arange(1, 9, 0.01)
-x3 = np.arange(-9, -1, 0.01)
-x4 = np.arange(1, 9, 0.01)
-x5 = np.arange(-9, -6, 0.01)
-x6 = np.arange(6, 9, 0.01)
-x7 = np.arange(-1, 1, 0.01)
+    plt.subplots()
+    plt.grid(True)
+    plt.plot(x1, y1, 'b', linewidth=1)
+    plt.plot(x2, y2, 'b', linewidth=1)
+    plt.plot(x3, y3, 'b', linewidth=1)
+    plt.plot(x4, y4, 'b', linewidth=1)
+    plt.plot(x5, y5, 'b', linewidth=1)
+    plt.plot(x6, y6, 'b', linewidth=1)
 
-y1 = (-0.0625*((x1+5)**2)+2)
-y2 = (-0.0625*((x2-5)**2)+2)
-y3 = (0.25*((x3+5)**2)-3)
-y4 = (0.25*((x4-5)**2)-3)
-y5 = (-((x5+7)**2)+5)
-y6 = (-((x6-7)**2)+5)
-y7 = (-0.5*(x7**2)+1.5)
+    plt.show()
+def b():
+    x1 = np.arange(-9, -1, 0.01)
+    x2 = np.arange(1, 9, 0.01)
+    x3 = np.arange(-9, -8, 0.01)
+    x4 = np.arange(8, 9, 0.01)
+    x5 = np.arange(-8, -1, 0.01)
+    x6 = np.arange(1, 8, 0.01)
+    x7 = np.arange(-8, -1, 0.01)
+    x8 = np.arange(1, 8, 0.01)
+    x9 = np.arange(-8, -2, 0.01)
+    x10 = np.arange(2, 8, 0.01)
+    x11 = np.arange(-2, -1, 0.01)
+    x12 = np.arange(1, 2, 0.01)
+    x13 = np.arange(-1, 1, 0.01)
+    x14 = np.arange(-1, 1, 0.01)
+    x15 = np.arange(-2,0,0.01)
+    x16 = np.arange(0, 2, 0.01)
 
-plt.subplots()
-plt.grid(True)
-plt.plot(x1, y1, 'b', linewidth=1)
-plt.plot(x2, y2, 'b', linewidth=1)
-plt.plot(x3, y3, 'b', linewidth=1)
-plt.plot(x4, y4, 'b', linewidth=1)
-plt.plot(x5, y5, 'b', linewidth=1)
-plt.plot(x6, y6, 'b', linewidth=1)
-plt.plot(x7, y7, 'b', linewidth=1)
+    y1 = (-0.125*((x1+9)**2)+8)
+    y2 = (-0.125*((x2-9)**2)+8)
+    y3 = (7*((x3+8)**2) +1)
+    y4 = (7*((x4-8)**2) +1)
+    y5 = (0.0204*((x5+1)**2))
+    y6 = (0.0204*((x6-1)**2))
+    y7 = (-0.0816*((x7+1)**2))
+    y8 = (-0.0816*((x8-1)**2))
+    y9 = (0.3333 * ((x9 + 5) ** 2) - 7)
+    y10 = (0.3333 * ((x10 - 5) ** 2) - 7)
+    y11 = (-2 * ((x11 + 1) ** 2) - 2)
+    y12 = (-2 * ((x12 - 1) ** 2) - 2)
+    y13 = (-4*(x13**2)+2)
+    y14 = (4*(x14**2)-6)
+    y15 = (-1.5 * x15+2)
+    y16 = (1.5 * x16+2)
 
-plt.show()
+    plt.subplots()
+    plt.grid(True)
+    plt.plot(x1, y1, 'b',linewidth=1)
+    plt.plot(x2, y2, 'b',linewidth=1)
+    plt.plot(x3, y3, 'b',linewidth=1)
+    plt.plot(x4, y4, 'b',linewidth=1)
+    plt.plot(x5, y5, 'b',linewidth=1)
+    plt.plot(x6, y6, 'b',linewidth=1)
+    plt.plot(x7, y7, 'b', linewidth=1)
+    plt.plot(x8, y8, 'b', linewidth=1)
+    plt.plot(x9, y9, 'b', linewidth=1)
+    plt.plot(x10, y10, 'b', linewidth=1)
+    plt.plot(x11, y11, 'b', linewidth=1)
+    plt.plot(x12, y12, 'b', linewidth=1)
+    plt.plot(x13, y13, 'b', linewidth=1)
+    plt.plot(x14, y14, 'b', linewidth=1)
+    plt.plot(x15, y15, 'b', linewidth=1)
+    plt.plot(x16, y16, 'b', linewidth=1)
+
+    plt.show()
+o()
+z()
+b()
