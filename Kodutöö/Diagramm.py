@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-fail=open("data.txt","r")
+file=open("Kodutöö/data.txt","r")
 mas1=[]
 mas2=[]
 for line in file:
