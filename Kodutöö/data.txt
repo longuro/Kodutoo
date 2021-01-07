@@ -4,7 +4,7 @@ IKT turvatestid, 28.8
 Andmete, dokumentidе, e-kirjade krüpteerimine, 30.2
 Turvaintsidendi logifailide kopeerimine ja säilitamine analüüsiks, 35.8
 VPN-i kasutamine, 39.9
-Võrgujuurdepääsu kontroll, 60
+Võrgujuurdepääsu kontroll, 60.0
 Tugev paroolide autentimine, 61.1
 Andmete varundamine eraldi keskkonda, 64.6
 Tarkvara värskemate versioonide kasutamine, 70.7
