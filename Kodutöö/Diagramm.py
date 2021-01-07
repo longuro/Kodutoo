@@ -9,7 +9,6 @@ for line in file:
     mas1.append(line[0:n].strip())
     mas2.append(line[n+1:len(line)].strip())
 file.close()
-
 title = "IKT turvameetodite kasutamise osatähtsus ettevõttes, 2018"
 
 fig, ax = plt.subplots(ncols=1)
