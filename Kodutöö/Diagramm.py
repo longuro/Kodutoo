@@ -1,7 +1,7 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
-file=open("Kodutöö/data.txt","r")
+file=open("Kodutöö/1.txt","r")
 mas1=[]
 mas2=[]
 for line in file:
@@ -10,17 +10,10 @@ for line in file:
     mas2.append(int(line[n+1:len(line)].strip()))
 file.close()
 
-title = "IKT turvameetodite kasutamise osatähtsus ettevõttes, 2018"
+title = "Данные о ИТ безопасности"
+plt.grid(True)
 
-fig, ax = plt.subplots(ncols=1)
-fig.canvas.set_window_title(title)
-fig.suptitle(title)
-
-ax.set_xlabel("%")
-ax.set_ylabel("Nimi")
-values = [x[1] for x in data]
-tick_label = [x[0] for x in data]
-
-ax.barh(values, tick_label, 0.7, color="#b32b0e")
+color_rectangle = np.random.rand(7, 3)
+plt.barh(mas1, mas2, color=color_rectangle)
 
 plt.show()
